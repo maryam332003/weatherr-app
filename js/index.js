@@ -1,5 +1,5 @@
 const apiKey = "6e1731ad28eb43f8a9b183443230810";
-const baseUrl = "http://api.weatherapi.com/v1/forecast.json";
+const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 const searchBox = document.getElementById("searchBox");
 const locationCoutry = document.getElementById("location");
 const percent = document.querySelectorAll(".percent");
