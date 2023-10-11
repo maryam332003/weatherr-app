@@ -1,0 +1,98 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather App</title>
+      <link
+        rel="shortcut icon"
+        href="./images/4052984 (1).ico"
+        type="image/x-icon"
+      />
+      <link rel="stylesheet" href="./css/all.min.css" />
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+      <main class="interface">
+        <div class="container">
+          <header>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="location" id="location"></p>
+            </div>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input
+                type="text"
+                name="search"
+                placeholder="Search city..."
+                id="searchBox"
+                spellcheck="false"
+                autocomplete="off"
+              />
+            </div>
+          </header>
+          <section class="forecast row">
+            <div class="forecast-data col-md-9">
+              <h2>Weather</h2>
+              <div class="forecast-cards" id="forecastCard"></div>
+            </div>
+            <div class="rain-chance col-md-3">
+              <h3>Chance of rain</h3>
+              <div class="rain-day-hours">
+                <div class="clock" data-clock="9">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>9 Am</p>
+                </div>
+                <div class="clock" data-clock="11">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>11 Am</p>
+                </div>
+                <div class="clock" data-clock="15">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>3 PM</p>
+                </div>
+                <div class="clock" data-clock="19">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>7 PM</p>
+                </div>
+                <div class="clock" data-clock="22">
+                  <div class="bar">
+                    <div class="percent"></div>
+                  </div>
+                  <p>10 PM</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="recent-cities row my-3">
+            <div class="recent-header">
+              <h2>Recent Cities</h2>
+              <button id="deleteBtn">Clear All <i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="city-items"></div>
+          </section>
+        </div>
+      </main>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.32/sweetalert2.all.min.js"
+        integrity="sha512-zB7yJLSASiSevQmWCrQaq+z/f5zRIa884hwWgmK1oI3MfolIzKcpDtyfBsrGqUi/hMCObVwr/+SZTByOqh0zkQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="js/index.js"></script>
+    </body>
+  </html>
+</html>
